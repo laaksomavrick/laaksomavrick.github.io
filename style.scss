@@ -7,6 +7,8 @@
 
 @import "reset";
 @import "variables";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700|Quicksand:300,700);
+
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -18,7 +20,7 @@ html {
 }
 
 body {
-	background: $white;
+    background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -140,6 +142,87 @@ img {
 
 .clearfix:after {
     clear: both;
+}
+
+/**************/
+/* LANDING PAGE */
+/**************/
+
+.landing-container {
+    font-family: $open-sans;    
+    margin-top: 15vh;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 390px;
+    padding: 0 10px;
+    width: 100%;
+
+    ul {
+        margin: auto;
+        padding-left: 0;        
+    }
+
+    ul li {
+        font-size: 14px;
+        display: inline;
+    }
+
+    a {
+        color: inherit;
+    }
+
+}
+.header {
+
+    h1 {
+        font-family: $quicksand;                 
+        font-size: 36px;
+    }
+
+    h1, p {
+        font-weight: 300;       
+    }
+}
+
+.fade-in {
+    animation: fade-in 1000ms;
+    animation-fill-mode: both
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.hero-animate-in {
+    animation: hero-animate-in 1.5s;
+    animation-fill-mode: both
+}
+
+@keyframes hero-animate-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px)
+    }
+
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
+
+#tag.hero-animate-in {
+    animation-delay: 2s;
+}
+
+#links.hero-animate-in {
+    animation-delay: 4s;
 }
 
 /*********************/

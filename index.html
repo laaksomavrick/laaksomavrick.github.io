@@ -1,70 +1,37 @@
-<script>
-    var TxtType = function(el, toRotate, period) {
-            this.toRotate = toRotate;
-            this.el = el;
-            this.loopNum = 0;
-            this.period = parseInt(period, 10) || 2000;
-            this.txt = '';
-            this.tick();
-            this.isDeleting = false;
-        };
-        TxtType.prototype.tick = function() {
-            var i = this.loopNum % this.toRotate.length;
-            var fullTxt = this.toRotate[i];
-            if (this.isDeleting) {
-            this.txt = fullTxt.substring(0, this.txt.length - 1);
-            } else {
-            this.txt = fullTxt.substring(0, this.txt.length + 1);
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Mavrick Laakso</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <style>
+            html, body, h1 {
+                color: white;
+                background-color: #2c4261;
             }
-            this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-            var that = this;
-            var delta = 200 - Math.random() * 100;
-            if (this.isDeleting) { delta /= 2; }
-            if (!this.isDeleting && this.txt === fullTxt) {
-            delta = this.period;
-            this.isDeleting = true;
-            } else if (this.isDeleting && this.txt === '') {
-            this.isDeleting = false;
-            this.loopNum++;
-            delta = 500;
-            }
-            setTimeout(function() {
-            that.tick();
-            }, delta);
-        };
-        window.onload = function() {
-            var elements = document.getElementsByClassName('typewrite');
-            for (var i=0; i<elements.length; i++) {
-                var toRotate = elements[i].getAttribute('data-type');
-                var period = elements[i].getAttribute('data-period');
-                if (toRotate) {
-                  new TxtType(elements[i], JSON.parse(toRotate), period);
-                }
-            }
-            // INJECT CSS
-            var css = document.createElement("style");
-            css.type = "text/css";
-            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-            document.body.appendChild(css);
-        };
-    </script>
-    
-    <style>
-    body {
-      background-color:#000000;
-      text-align: center;
-      color:#fff;
-      padding-top:10em;
-    }
-    * { color:#00e81b;
-      text-decoration: none;
-      font-family: Courier ;
-    }
-    </style>
-    
-    
-    <h1>
-      <a href="" class="typewrite" data-period="2000" data-type='[ "Wake up, Neo...", "The Matrix has you...", "Follow the white rabbit.", "Knock knock, Neo." ]'>
-        <span class="wrap"></span>
-      </a>
-    </h1>
+        </style>
+
+    </head>
+
+    <body>
+        <div class="landing-container">
+            <div class="header">
+                <h1 id="hero" class="fade-in hero-animate-in">
+                    Hi, I'm Mavrick Laakso.
+                </h1>
+                <p id="tag" class="fade-in hero-animate-in">
+                    I develop web and mobile applications.
+                </p>
+            </div>
+            <ul id="links" class="fade-in hero-animate-in">
+                <li><a href="/cv">Resume</a> &middot;</li>
+                <li><a href="/blog">Blog</a> &middot;</li>
+                <li><a href="/blog">LinkedIn</a> &middot;</li>
+                <li><a href="/blog">GitHub</a> &middot;</li>
+                <li><a href="/blog">Twitter</a></li>
+            </ul>
+        </div>
+    </body>
+
+</html>
