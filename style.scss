@@ -161,7 +161,7 @@ img {
     z-index: 5;
 
     ul {
-        margin-top:20px;
+        margin-top:0px;
         margin-bottom: 15px;
         padding-left: 0;        
     }
@@ -191,6 +191,13 @@ img {
     h1, p {
         font-weight: 300;       
     }
+
+    #tag {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size:18px;        
+    }
+
 }
 
 #hero, #tag, #links {
