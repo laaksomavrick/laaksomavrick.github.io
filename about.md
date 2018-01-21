@@ -1,27 +1,13 @@
 ---
 layout: page
-title: About me
 permalink: /about/
 ---
 
-Hi, I am Gayan Virajith, a developer (who works on the web) based on Sri Lanka. 
-Graduated from the University College Dublin (National University of Ireland). 
+Hello, I'm Mavrick. I'm a software developer living in Ontario, Canada. I enjoy developing with JavaScript, Swift, and Ruby.
 
-I am Working for [template-factory.nl][tf] also known as [Mearch ICT][m].
-Prefer to serve with Php and Ruby based stacks and also love to work 
-on [Jekyll][jekyll] and [Processwire CMS/CMF][pw].
-
-### Contact me
-
-Find me on [Google+][google] / [Github][github] / [Twitter][Twitter] or just say `Hello` at 
-[gayanvirajith@gmail.com](gayanvirajith@gmail.com).
+You can see my hobby projects via [Github][github], DM me via [Twitter][Twitter] or send me an email at
+[laakso.mavrick@gmail.com](laakso.mavrick@gmail.com).
 
 
-[tf]: http://template-factory.nl
-[m]: http://mearch.com
-[pw]: http://processwire.com
-[pwf]: http://processwire.com/talk
-[jekyll]: http://jekyllrb.com
-[github]: https://github.com/gayanvirajith
-[google]: https://plus.google.com/+GayanVirajith
-[twitter]: https://twitter.com/gayanvirajith
+[github]: https://github.com/laaksomavrick
+[twitter]: https://twitter.com/laaksomavrick
