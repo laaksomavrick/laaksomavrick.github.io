@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Syntactically similar texts with Markov Chains"
-date:   2014-08-19 23:56:45
+date:   2018-01-21 23:56:45
 description: A ruby implementation and explanation of a Markov Chain 
 categories:
 permalink: syntactic-markov-chain
