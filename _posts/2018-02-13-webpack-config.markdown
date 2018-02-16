@@ -9,7 +9,7 @@ permalink: webpack-basics
 
 Webpack is a module bundling library common in modern Javascript projects which has a reputation for being esoteric and difficult to configure. This causes unfamiliar users to rely on using template configurations - which are great when you want to get coding fast - but make your build process a black box. Eventually, you'll want to configure or adjust your build pipeline (adding a linter, using SCSS, developing server side rendering, whatever) and you'll need to understand what's going on underneath the hood.
 
-Hence my reasoning for this post! I wanted to start exploring server side rendering for Vue, but found the available templates too unwieldy. I'm aiming in this post to provide a gentle introduction to basic Webpack configuration for Vue front ends. While server side rendering is beyond the scope of this post, I will explain a configuration which gives us access to Modules (import), Babel, and Vue..
+Hence my reasoning for this post! I wanted to start exploring server side rendering for Vue, but found the available templates too unwieldy. I'm aiming in this post to provide a gentle introduction to basic Webpack configuration for Vue front ends. While server side rendering is beyond the scope of this post, I will explain a configuration which gives us access to Modules (import), Babel, and Vue.
 
 Webpack has 3 basic foundations for it's configuration: an input file, an output file, and the functions to apply to encountered filetypes.
 
