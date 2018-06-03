@@ -18,4 +18,5 @@ body {
 .container p {
     background: linear-gradient(#F9D423, #FF4E50);
     font-size: 128px;
+    color: #222;
 }
