@@ -1,4 +1,75 @@
 html {
-    background: black;
-    color: white;
+    background: #f7f7f7;
+    color: #0f0f0f;
 }
+
+body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    min-height: 100%;
+    max-width: 800px;
+    margin: 15px 30% 15px 30%;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 568px){
+    .container {
+        margin: 15px 5% 15px 5%;
+    }
+}
+
+@media only screen and (min-width: 569px) and (max-width: 768px){
+    .container {
+        margin: 15px 15% 15px 15%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .container {
+        margin: 15px 25% 15px 25%;
+    }
+}
+
+@media only screen and (min-width: 1025px){
+    .container {
+        margin: 15px 30% 15px 30%;
+    }
+}
+
+.blog-header {
+    margin-bottom: 4px;
+}
+
+.blog-subheader {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 0.67em;
+}
+
+.blog-posts-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-post-list {
+    margin-bottom: 0.67em;
+}
+
+.blog-post-list-title {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.blog-post-list-timestamp {
+    font-size: 14px;
+}
+
