@@ -18,30 +18,30 @@ a:hover {
 .container {
     min-height: 100%;
     max-width: 800px;
-    margin: 15px 30% 15px 30%;
+    margin: 15px 20% 15px 20%;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 568px){
     .container {
-        margin: 15px 5% 15px 5%;
+        margin: 15px 5px 15px 5px;
     }
 }
 
 @media only screen and (min-width: 569px) and (max-width: 768px){
     .container {
-        margin: 15px 15% 15px 15%;
+        margin: 15px 5% 15px 5%;
     }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px){
     .container {
-        margin: 15px 25% 15px 25%;
+        margin: 15px 10% 15px 10%;
     }
 }
 
 @media only screen and (min-width: 1025px){
     .container {
-        margin: 15px 30% 15px 30%;
+        margin: 15px 20% 15px 20%;
     }
 }
 
@@ -71,5 +71,9 @@ a:hover {
 
 .blog-post-list-timestamp {
     font-size: 14px;
+}
+
+.post-content {
+    line-height: 22px;
 }
 
